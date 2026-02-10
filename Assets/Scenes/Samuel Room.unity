@@ -3700,6 +3700,11 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &1300677895 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5485823965848676407, guid: 233d735817dff43da9b78129b58d66fb, type: 3}
+  m_PrefabInstance: {fileID: 907647586}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1346756897
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4902,11 +4907,11 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 25a07ef133a37d140a87cdf1f1c75fdf, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Unity.XR.Interaction.Toolkit::UnityEngine.XR.Interaction.Toolkit.Interactors.NearFarInteractor
+  m_EditorClassIdentifier: 
   m_InteractionManager: {fileID: 0}
   m_InteractionLayers:
-    m_Bits: 4294967295
-  m_Handedness: 0
+    m_Bits: 5
+  m_Handedness: 2
   m_AttachTransform: {fileID: 0}
   m_KeepSelectedTargetValid: 1
   m_DisableVisualsWhenBlockedInGroup: 1
@@ -4920,10 +4925,34 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1300677895}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1300677895}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_SelectInput:
@@ -4932,7 +4961,7 @@ MonoBehaviour:
       m_Name: Select
       m_Type: 1
       m_ExpectedControlType: 
-      m_Id: a64533d1-51a3-4938-b519-bfccb22ac99d
+      m_Id: 2491b664-3d4e-4f20-a7ae-ee1861d845f2
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
@@ -4941,13 +4970,13 @@ MonoBehaviour:
       m_Name: Select Value
       m_Type: 0
       m_ExpectedControlType: Axis
-      m_Id: 4672120a-4437-4359-80f8-ebbf26aaad99
+      m_Id: fc42dacc-33eb-41ec-9c17-d242ac6b0c5b
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
-    m_InputActionReferencePerformed: {fileID: 0}
-    m_InputActionReferenceValue: {fileID: 0}
+    m_InputActionReferencePerformed: {fileID: 187161793506945269, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+    m_InputActionReferenceValue: {fileID: -1758520528963094988, guid: c348712bda248c246b8c49b3db54643f, type: 3}
     m_ObjectReferenceObject: {fileID: 0}
     m_ManualPerformed: 0
     m_ManualValue: 0
@@ -4962,7 +4991,7 @@ MonoBehaviour:
       m_Name: Activate
       m_Type: 1
       m_ExpectedControlType: 
-      m_Id: ebb9cf9c-42b9-4501-9c61-1b182a7c4ae9
+      m_Id: 77660b9e-6bbe-4740-b80f-1fea8d0f59e1
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
@@ -4971,13 +5000,13 @@ MonoBehaviour:
       m_Name: Activate Value
       m_Type: 0
       m_ExpectedControlType: Axis
-      m_Id: e1d4caa2-cff5-40d5-ab8e-a3aadedfc519
+      m_Id: 94568f52-c27a-47fc-a190-5e3b17572929
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
-    m_InputActionReferencePerformed: {fileID: 0}
-    m_InputActionReferenceValue: {fileID: 0}
+    m_InputActionReferencePerformed: {fileID: 83097790271614945, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+    m_InputActionReferenceValue: {fileID: 7904272356298805229, guid: c348712bda248c246b8c49b3db54643f, type: 3}
     m_ObjectReferenceObject: {fileID: 0}
     m_ManualPerformed: 0
     m_ManualValue: 0
@@ -5023,14 +5052,14 @@ MonoBehaviour:
   m_HapticHoverCancelIntensity: 0
   m_HapticHoverCancelDuration: 0
   m_AllowHoverHapticsWhileSelecting: 1
-  m_InteractionAttachController: {fileID: 1891598468}
+  m_InteractionAttachController: {fileID: 0}
   m_EnableNearCasting: 1
-  m_NearInteractionCaster: {fileID: 1891598467}
+  m_NearInteractionCaster: {fileID: 0}
   m_NearCasterSortingStrategy: 1
   m_SortNearTargetsAfterTargetFilter: 0
   m_EnableFarCasting: 1
-  m_FarInteractionCaster: {fileID: 1891598466}
-  m_FarAttachMode: 1
+  m_FarInteractionCaster: {fileID: 0}
+  m_FarAttachMode: 0
   m_EnableUIInteraction: 1
   m_BlockUIOnInteractableSelection: 1
   m_UIHoverEntered:
@@ -5045,7 +5074,7 @@ MonoBehaviour:
       m_Name: UI Press
       m_Type: 1
       m_ExpectedControlType: 
-      m_Id: e40c5afd-2ef8-4e0f-a084-05fcc63b9e69
+      m_Id: ded1ccb2-ff18-46c7-ade9-b80985fe2825
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
@@ -5054,13 +5083,13 @@ MonoBehaviour:
       m_Name: UI Press Value
       m_Type: 0
       m_ExpectedControlType: Axis
-      m_Id: 88f0da84-91be-485f-a307-3343fc493ed8
+      m_Id: d762660e-30e0-4a4d-8e2a-e6b553e03f11
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
-    m_InputActionReferencePerformed: {fileID: 0}
-    m_InputActionReferenceValue: {fileID: 0}
+    m_InputActionReferencePerformed: {fileID: 3279264004350380116, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+    m_InputActionReferenceValue: {fileID: -5908353012961274365, guid: c348712bda248c246b8c49b3db54643f, type: 3}
     m_ObjectReferenceObject: {fileID: 0}
     m_ManualPerformed: 0
     m_ManualValue: 0
@@ -5075,12 +5104,12 @@ MonoBehaviour:
       m_Name: UI Scroll
       m_Type: 0
       m_ExpectedControlType: Vector2
-      m_Id: 330fcbd2-be6b-44a4-bcc8-1e7db29e04ea
+      m_Id: ef5cc4a5-b968-432c-9ae7-45e494178db0
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
-    m_InputActionReference: {fileID: 0}
+    m_InputActionReference: {fileID: -6756787485274679044, guid: c348712bda248c246b8c49b3db54643f, type: 3}
     m_ObjectReferenceObject: {fileID: 0}
     m_ManualValue: {x: 0, y: 0}
 --- !u!114 &1891598466
